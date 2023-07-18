@@ -164,7 +164,7 @@ nav a {
 }
 
 .gammer-img img {
-    width: 100%;
+    width: 80%;
 }
 
 .gammer-text {
@@ -197,9 +197,11 @@ nav a {
     font-weight: 700;
     text-align: center;
 }
-.online-game p{
+
+.online-game p {
     text-align: center;
 }
+
 .funny-video {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -208,25 +210,66 @@ nav a {
     font-size: 3rem;
     font-weight: 700;
 }
-.card-container{
+
+.card-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin: 0px 180px;
 }
-.card{
+
+.card {
     width: 340px;
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card figcaption{
+
+.card figcaption {
     padding-top: 7px;
     font-size: .9rem;
 }
 
+/* this is instant play section  */
+.instant-play {
+    width: calc(100vw - 380px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    margin-left:100px ;
+    flex-shrink: inherit;
+    
+}
 
+.instant-text h2 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.instantly {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+.child-img{
+border-radius: 20px;
+position: relative;
+top: -150px;
+left: -50px;
+
+
+}
 /* this is for the responsive layout ? */
 
 /* for small devices  
@@ -237,7 +280,8 @@ nav a {
     header,
     nav ul,
     .goat-banner,
-    .gammer-banner,.card-container {
+    .gammer-banner,
+    .card-container,.instant-play {
         flex-direction: column;
     }
 
@@ -245,15 +289,21 @@ nav a {
         justify-content: center;
         align-items: center;
     }
-
+    .goat-img img {
+        width: 424px;
+    }
     .gammer-text {
         text-align: center;
         margin-right: 0;
     }
-    .card-container{
+
+    .card-container {
         margin: 0;
     }
-
+    .instant-play{
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 
@@ -264,7 +314,8 @@ nav a {
 
     header,
     .goat-banner,
-    .gammer-banner,.card-container {
+    .gammer-banner,
+    .card-container ,.instant-play{
         flex-direction: column;
     }
 
@@ -273,7 +324,8 @@ nav a {
         align-items: center;
     }
 
-    .gammer-text ,.card-container{
+    .gammer-text,
+    .card-container {
         text-align: center;
         margin-right: 0;
     }
