@@ -157,16 +157,20 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-.gammer-text{
+
+.gammer-text {
     text-align: right;
     margin-right: 50px;
 }
-.gammer-img img{
+
+.gammer-img img {
     width: 100%;
 }
-.gammer-text{
+
+.gammer-text {
     width: 430px;
 }
+
 .gammer-text h2 {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -174,16 +178,53 @@ nav a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.gammer-text p{
+
+.gammer-text p {
     font-size: .7rem;
 }
-.unleash{
+
+.unleash {
     color: #23086d;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-
+/* this is for the online game section  */
+.online-game h2 {
+    color: #0B0223;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.online-game p{
+    text-align: center;
+}
+.funny-video {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 180px;
+}
+.card{
+    width: 340px;
+}
+.card img{
+    width: 100%;
+}
+.card figcaption{
+    padding-top: 7px;
+    font-size: .9rem;
+}
 
 
 /* this is for the responsive layout ? */
@@ -195,7 +236,8 @@ nav a {
 
     header,
     nav ul,
-    .goat-banner,.gammer-banner {
+    .goat-banner,
+    .gammer-banner,.card-container {
         flex-direction: column;
     }
 
@@ -203,9 +245,13 @@ nav a {
         justify-content: center;
         align-items: center;
     }
-    .gammer-text{
+
+    .gammer-text {
         text-align: center;
         margin-right: 0;
+    }
+    .card-container{
+        margin: 0;
     }
 
 }
@@ -217,7 +263,8 @@ nav a {
 @media screen and (min-width:570px) and (max-width:800px) {
 
     header,
-    .goat-banner,.gammer-banner {
+    .goat-banner,
+    .gammer-banner,.card-container {
         flex-direction: column;
     }
 
@@ -225,7 +272,8 @@ nav a {
         justify-content: center;
         align-items: center;
     }
-    .gammer-text{
+
+    .gammer-text ,.card-container{
         text-align: center;
         margin-right: 0;
     }
