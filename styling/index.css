@@ -16,6 +16,17 @@
     font-size: 1.2rem;
 }
 
+.cmn-btn {
+    padding: 21px 30px;
+    margin: 5px;
+    background-color: var(--commom);
+    border-radius: 40px;
+    color: #ffffff;
+    border: 0;
+    margin-right: 10px;
+}
+
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -96,6 +107,7 @@ nav a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
     padding: 30px 180px;
     padding: 0;
 }
@@ -135,20 +147,41 @@ nav a {
     padding-right: 4px;
 }
 
-.cmn-btn {
-    padding: 21px 30px;
-    background-color: var(--commom);
-    border-radius: 40px;
-    color: #ffffff;
-    border: 0;
-    margin-right: 10px;
-}
-
 .rogue-btn {
     background-color: #4EC5F7;
 }
 
-
+/* this is for the gammer banner  area  */
+.gammer-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gammer-text{
+    text-align: right;
+    margin-right: 50px;
+}
+.gammer-img img{
+    width: 100%;
+}
+.gammer-text{
+    width: 430px;
+}
+.gammer-text h2 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gammer-text p{
+    font-size: .7rem;
+}
+.unleash{
+    color: #23086d;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 
 
@@ -162,12 +195,17 @@ nav a {
 
     header,
     nav ul,
-    .goat-banner {
+    .goat-banner,.gammer-banner {
         flex-direction: column;
     }
-    .goat-banner{
+
+    .goat-banner {
         justify-content: center;
         align-items: center;
+    }
+    .gammer-text{
+        text-align: center;
+        margin-right: 0;
     }
 
 }
@@ -179,12 +217,17 @@ nav a {
 @media screen and (min-width:570px) and (max-width:800px) {
 
     header,
-    .goat-banner {
+    .goat-banner,.gammer-banner {
         flex-direction: column;
     }
-    .goat-banner{
+
+    .goat-banner {
         justify-content: center;
         align-items: center;
+    }
+    .gammer-text{
+        text-align: center;
+        margin-right: 0;
     }
 
 }
