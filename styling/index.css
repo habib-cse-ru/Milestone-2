@@ -1,4 +1,11 @@
 /* this is for all shared styles  */
+
+:root {
+    --commom: #ff42a5;
+
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +15,12 @@
     color: #534C64;
     font-size: 1.2rem;
 }
-body{
+
+body {
     width: 100vw;
+    overflow-x: hidden;
 }
+
 /* this is for header section styling  */
 header {
     width: calc(100vw - 380px);
@@ -18,7 +28,7 @@ header {
     padding: 40px 180px;
     display: flex;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
 
 }
 
@@ -37,27 +47,31 @@ header {
 }
 
 .logo-g {
-    color: #ff42a5;
+    color: var(--commom);
     font-size: 45px;
     font-weight: 700;
     padding-left: 5px;
 }
+
 nav ul {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin-right: 10px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: #3C354F;
     font-weight: 500;
 }
-.follow-nav{
+
+.follow-nav {
     width: 260px;
     background: #0000001e;
     border-radius: 10px;
@@ -65,19 +79,74 @@ nav a{
     text-align: center;
     padding-top: 10px;
 }
-.fa-youtube{
+
+.fa-youtube {
     color: red;
 }
-.fa-tiktok{
+
+.fa-tiktok {
     color: black;
     text-shadow: 3px 3px red;
 }
 
+/* this is for the goat section styling ?  */
 
+.goat-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 30px 180px;
+    padding: 0;
+}
 
+.goat-img img {
+    width: 500px;
+}
 
+.goat-text h2 {
+    text-align: left;
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.goat-text p {
+    color: #0B0223;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+.goat-text ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.fa-toggle-on,
+.fa-circle-down,
+.fa-people-group {
+    color: var(--commom);
+    padding-right: 4px;
+}
+
+.cmn-btn {
+    padding: 21px 30px;
+    background-color: var(--commom);
+    border-radius: 40px;
+    color: #ffffff;
+    border: 0;
+    margin-right: 10px;
+}
+
+.rogue-btn {
+    background-color: #4EC5F7;
+}
 
 
 
@@ -89,11 +158,18 @@ nav a{
 /* for small devices  
 */
 
-@media  screen and (max-width:570px) {
-    header,nav ul{
+@media screen and (max-width:570px) {
+
+    header,
+    nav ul,
+    .goat-banner {
         flex-direction: column;
     }
-    
+    .goat-banner{
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 
@@ -101,7 +177,14 @@ nav a{
 /* for medium devices  */
 
 @media screen and (min-width:570px) and (max-width:800px) {
-    header{
+
+    header,
+    .goat-banner {
         flex-direction: column;
     }
+    .goat-banner{
+        justify-content: center;
+        align-items: center;
+    }
+
 }
