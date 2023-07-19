@@ -3,8 +3,9 @@
 :root {
     --commom: #ff42a5;
 
-
 }
+
+
 
 * {
     margin: 0;
@@ -15,7 +16,10 @@
     color: #534C64;
     font-size: 1.2rem;
 }
-
+.cmn-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
 .cmn-btn {
     padding: 21px 30px;
     margin: 5px;
@@ -77,11 +81,18 @@ nav ul li {
 }
 
 nav a {
+    padding: 3px;
     text-decoration: none;
     color: #3C354F;
     font-weight: 500;
+    transition: .25s;
 }
-
+nav a:hover {
+    border-radius: 5px;
+    background: #4e4c4c;
+    color: #fcfbff;
+    font-weight: 500;
+}
 .follow-nav {
     width: 260px;
     background: #0000001e;
@@ -240,9 +251,9 @@ nav a {
     align-items: center;
     gap: 50px;
     margin-bottom: 100px;
-    margin-left:100px ;
+    margin-left: 100px;
     flex-shrink: inherit;
-    
+
 }
 
 .instant-text h2 {
@@ -262,26 +273,29 @@ nav a {
     font-weight: 700;
     line-height: 60px;
 }
-.child-img{
-border-radius: 20px;
-position: relative;
-top: -150px;
-left: -50px;
+
+.child-img {
+    border-radius: 20px;
+    position: relative;
+    top: -150px;
+    left: -50px;
 
 
 }
+
 /* this is for the game types section css  */
-.game-types{
+.game-types {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     justify-content: space-around;
     align-items: center;
     margin: 0px 140px;
 
 }
-.child-type{
+
+.child-type {
     width: 180px;
     height: fit-content;
     display: flex;
@@ -293,21 +307,61 @@ left: -50px;
     transition: 0.25s;
 
 }
+
 .child-type:hover {
     border: 2px solid #ff42a5;
     border-radius: 50px;
 }
-.child-type:hover h2{
-  
+
+.child-type:hover h2 {
+
     color: #ff42a5;
 }
-.child-type h2{
+
+.child-type h2 {
     font-size: 1rem;
 }
 
+/* this is for the footer section styling  */
+footer {
+    background-color: #0B0223;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 30px;
+    color: #ffffff;
+}
 
+footer li {
+    list-style: none;
+}
 
+footer li a {
+    text-decoration: none;
+    color: #ffffffdb;
+    padding: 3px;
+    border-radius: 5px;
+    transition: .25s;
+}
+footer li a:hover {
+   background-color: #e4ddf789;
+    color: #171466db;
+}
+.social-container {
+    display: grid;
+    justify-content: space-around;
+    gap: 10px;
 
+}
+
+.policy-container {
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 
 
@@ -325,7 +379,8 @@ left: -50px;
     nav ul,
     .goat-banner,
     .gammer-banner,
-    .card-container,.instant-play {
+    .card-container,
+    .instant-play {
         flex-direction: column;
     }
 
@@ -333,9 +388,11 @@ left: -50px;
         justify-content: center;
         align-items: center;
     }
+
     .goat-img img {
         width: 424px;
     }
+
     .gammer-text {
         text-align: center;
         margin-right: 0;
@@ -344,16 +401,30 @@ left: -50px;
     .card-container {
         margin: 0;
     }
-    .instant-play{
+
+    .instant-play {
         width: 100%;
         margin-left: 0;
     }
-    .game-types{
-        grid-template-columns: repeat(2,1fr);
+
+    .game-types {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .child-type{
+
+    .child-type {
         width: 200px;
         height: fit-content;
+    }
+    .cmn-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+    }
+    footer{
+        padding: 50px ;
+    }
+    .policy-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -366,7 +437,8 @@ left: -50px;
     header,
     .goat-banner,
     .gammer-banner,
-    .card-container ,.instant-play{
+    .card-container,
+    .instant-play {
         flex-direction: column;
     }
 
@@ -380,8 +452,15 @@ left: -50px;
         text-align: center;
         margin-right: 0;
     }
-    .game-types{
-        grid-template-columns: repeat(3,1fr);
+
+    .game-types {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cmn-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    footer{
+        padding: 100px;
     }
 
 }
